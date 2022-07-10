@@ -11,8 +11,7 @@ To learn more about Lexi Learn Illustrated Dictionary, click <a href="https://gi
 
 **Tech used:** Node.js, Express.js 
 
-At the time of this documentation, the Owlbot Dictionary API does not support CORS. This prevents Lexi Learn (and any other web application hosted on a different domain from Owlbot Dictionary API) from making requests. To circumvent this issue, Lexi Learn instead sends requests to a server that does offer CORS support. This server is built on Node and created with Express. The dotenv module is used to store configurable variables, namely the Owlbot API key and port number, in the environment. 
-To use the Fetch API in Node, I installed the isomorphic-fetch module, which in turn facililitates the fetching of data from the Owlbot Dictionary database to the server. This allows the server to act as a proxy API through which any client can send requests and get data from Owlbot. 
+At the time of this documentation, the Owlbot Dictionary API does not support CORS. This prevents Lexi Learn (and any other web application hosted on a different domain from Owlbot Dictionary API) from making requests. To circumvent this issue, Lexi Learn instead sends requests to a server that does offer CORS support. This server is built on Node and created with Express. To use the Fetch API in Node, I installed the isomorphic-fetch module, which in turn facililitates the fetching of data from the Owlbot Dictionary database to the server. This allows the server to act as a proxy API through which any client can send requests and get data from Owlbot. 
 
 ## Lessons Learned:
 
