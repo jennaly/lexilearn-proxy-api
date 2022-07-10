@@ -1,4 +1,4 @@
-# Lexi Learn Illustrated Dictionary Proxy API
+# Lexi Learn Proxy API
 An Express API created with CORS support that proxies requests from the Lexi Learn Illustrated Dictionary web application to the <a href="https://owlbot.info/">Owlbot Dictionary API</a>. 
 
 **Link to project:** http://lexilearn.netlify.com/ <br>
