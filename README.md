@@ -18,3 +18,6 @@ To use Fetch in Node, I installed the isomorphic-fetch module, which in turn fac
 
 I learned to set up a server with CORS support and using it as an API to proxy requests to another server. In addition, I learned to write basic authentication with Fetch using the Authorization header.
 
+## References
+**Link to project:** http://lexilearn.netlify.com/ <br>
+**Link to Lexi Learn Illustrated Dictionary:** https://github.com/jennaly/lexilearn-dictionary
