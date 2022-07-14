@@ -19,4 +19,4 @@ I learned to set up a server with CORS support and using it as an API to proxy r
 
 ## References
 **Link to project:** http://lexilearn.netlify.com/ <br>
-**Link to Lexi Learn Illustrated Dictionary:** https://github.com/jennaly/lexilearn-dictionary
+**Link to Lexi Learn Illustrated Dictionary Repo:** https://github.com/jennaly/lexilearn-dictionary
