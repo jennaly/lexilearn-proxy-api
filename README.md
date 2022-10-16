@@ -5,7 +5,7 @@ An Express API created with CORS support that proxies requests from the Lexi Lea
 
 To learn more about Lexi Learn Illustrated Dictionary, click <a href="https://github.com/jennaly/lexilearn-dictionary">**here**</a>
 
-![alt text](https://github.com/jennaly/lexilearn-dictionary/blob/main/img/lexilearn-min.gif?raw=true)
+![LexiLearnDemo](https://user-images.githubusercontent.com/106183040/196015252-9b87ed1c-a8a2-482e-9f12-de26cc0ea2aa.gif)
 
 ## How It's Made:
 
