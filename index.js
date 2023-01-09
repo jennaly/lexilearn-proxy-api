@@ -37,7 +37,7 @@ app.get('/api/dictionary/:word', async (req, res) => {
 
 });
 
-app.get('/api/dictionary/:word', async (req, res) => {
+app.get('/api/difficulty/:word', async (req, res) => {
     const responseData = await getWordDifficulty(req.params.word);
 
     res.json(responseData);
