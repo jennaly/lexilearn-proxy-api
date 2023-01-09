@@ -18,12 +18,32 @@ async function getData(word) {
     return data;
 };
 
+async function getWordDifficulty(word) {
+    const data = await fetch(`https://twinword-language-scoring.p.rapidapi.com/word/?entry=${word}`, {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': `Token ${process.env.TWINWORD_API_KEY}`,
+		    'X-RapidAPI-Host':  `Token ${process.env.TWINWORD_API_HOST}`
+        }
+    }).then(r => r.json());
+
+    return data;
+}
+
 app.get('/api/dictionary/:word', async (req, res) => {
     const responseData = await getData(req.params.word);
 
     res.json(responseData);
 
 });
+
+app.get('/api/dictionary/:word', async (req, res) => {
+    const responseData = await getWordDifficulty(req.params.word);
+
+    res.json(responseData);
+
+});
+
 
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`)
