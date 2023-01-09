@@ -31,19 +31,17 @@ async function getWordDifficulty(word) {
 }
 
 app.get('/api/dictionary/:word', async (req, res) => {
-    const responseData = await getData(req.params.word);
+    const wordData = await getData(req.params.word);
+    const wordDifficulty = await getWordDifficulty(req.params.word);
 
+    const responseData = {
+        ...wordData,
+        difficulty: wordDifficulty.ten_degree,
+    }
+    
     res.json(responseData);
 
 });
-
-app.get('/api/difficulty/:word', async (req, res) => {
-    const responseData = await getWordDifficulty(req.params.word);
-
-    res.json(responseData);
-
-});
-
 
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`)
