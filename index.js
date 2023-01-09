@@ -22,8 +22,8 @@ async function getWordDifficulty(word) {
     const data = await fetch(`https://twinword-language-scoring.p.rapidapi.com/word/?entry=${word}`, {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': `Token ${process.env.TWINWORD_API_KEY}`,
-		    'X-RapidAPI-Host':  `Token ${process.env.TWINWORD_API_HOST}`
+            'X-RapidAPI-Key': `${process.env.TWINWORD_API_KEY}`,
+		    'X-RapidAPI-Host':  `${process.env.TWINWORD_API_HOST}`
         }
     }).then(r => r.json());
 
